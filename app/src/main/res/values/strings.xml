@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">SeriesApp</string>
+    <string name="home" />
+    <string name="series" />
+    <string name="tvs" />
+    <string name="saved" />
+    <string name="netflix" />
+    <string name="descricao_filme_blablablablablabalabalaaabakanaghhhyh6uhhygbgbbrgbhnhnvbgnhnhnhtnhrnhnhtrnhtrngbthrnfb" />
+    <string name="new_movies">New Movies</string>
+    <string name="most_popular">Most Popular</string>
+    <string name="hello">hello</string>
+    <string name="comedy">comedy</string>
+    <string name="action">action</string>
+    <string name="terror">terror</string>
+    <string name="tvshow">tvshow</string>
+    <string name="suspense">suspense</string>
+    <string name="prepare_the_popcorn_and">prepare_the_popcorn_and</string>
+    <string name="enjoy">enjoy</string>
+    <string name="start">start</string>
+    <string name="search_movies_series_tvs">search_movies_series_tvs</string>
+    <string name="essa_p_gina_nao_esta_realizando_nenhuma_fun_ao_estamos_estudando_para_realizar_novas_tarefas_no_app">Essa página nao esta realizando nenhuma funçao. Estamos estudando para realizar novas tarefas no app</string>
+    <string name="tv_popular">TV Popular</string>
+    <string name="discover_tv">Discover Tv</string>
+    <string name="popular_tv">Popular Tv</string>
+    <string name="discover_tvs">Discover Tv</string>
+</resources>

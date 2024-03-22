@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item1"
+        android:title="@string/home"
+        android:icon="@drawable/iconcasa" />
+
+    <item
+        android:id="@+id/menu_item2"
+        android:title="@string/series"
+        android:icon="@drawable/iconpipoca" />
+
+    <item
+        android:id="@+id/menu_item3"
+        android:title="@string/tvs"
+        android:icon="@drawable/icontv" />
+    <item
+        android:id="@+id/menu_item4"
+        android:title="@string/saved"
+        android:icon="@drawable/iconsave" />
+</menu>

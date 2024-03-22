@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="190dp"
+    app:cardCornerRadius="25dp"
+    android:elevation="30dp"
+    android:layout_margin="5dp"
+    android:layout_marginBottom="10dp"
+    android:layout_marginLeft="7dp"
+    android:backgroundTint="#94FFFFFF"
+    android:id="@+id/cardfilm2">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/filmeposter2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fimeimg" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="120dp"
+        android:layout_height="79dp"
+        android:background="@drawable/shapebtn1" />
+
+    <TextView
+        android:id="@+id/filmname2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="10dp"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:lines="2"
+        android:maxLines="2"
+        android:text="Titulo Filme"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/starimg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="140dp"
+        android:src="@drawable/star" />
+
+    <TextView
+        android:id="@+id/starscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="140dp"
+        android:gravity="bottom"
+        android:maxLines="2"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/anoimg"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="190dp"
+        android:src="@drawable/calendar"
+        app:tint="@color/white" />
+
+    <TextView
+        android:id="@+id/anofilme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="190dp"
+        android:gravity="bottom"
+        android:maxLines="2"
+        android:text="2002"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+    <ProgressBar
+        android:id="@+id/load1"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/white"
+        android:indeterminate="true"
+        android:visibility="gone"/>
+</androidx.cardview.widget.CardView>

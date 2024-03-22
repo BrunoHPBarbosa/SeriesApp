@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/framesbackground"
+    android:id="@+id/search">
+
+    <include
+        layout="@layout/backbotton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="387dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shapebtn"
+        android:drawableEnd="@drawable/searchicon2"
+        android:ems="10"
+        android:hint="@string/search_movies_series_tvs"
+        android:inputType="text"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.138" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="408dp"
+        android:layout_height="71dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.333"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText"
+        app:layout_constraintVertical_bias="0.031">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/comedy" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/action" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/terror" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/tvshow" />
+
+        <Button
+            android:layout_width="128dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/shapebtn"
+            android:text="@string/suspense" />
+
+    </LinearLayout>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/work2"
+        android:layout_width="match_parent"
+        android:layout_height="316dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.726"
+        app:lottie_rawRes="@raw/working" />
+
+    <TextView
+        android:id="@+id/worktext2"
+        android:layout_width="362dp"
+        android:layout_height="192dp"
+        android:gravity="center"
+        android:lines="5"
+        android:text="@string/essa_p_gina_nao_esta_realizando_nenhuma_fun_ao_estamos_estudando_para_realizar_novas_tarefas_no_app"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.673"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.471" />
+
+    <ProgressBar
+        android:id="@+id/loadsearch2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/white"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/recyclerViewsearch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="@+id/recyclerViewsearch"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        app:layout_constraintVertical_bias="0.498" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewsearch"
+        android:layout_width="419dp"
+        android:layout_height="502dp"
+        android:layout_marginTop="10dp"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+</androidx.constraintlayout.widget.ConstraintLayout>
